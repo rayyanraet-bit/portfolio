@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dev-container">
+    <div class="terminal-header">
+      <div class="terminal-buttons">
+        <span class="dot close"></span>
+        <span class="dot minimize"></span>
+        <span class="dot maximize"></span>
+      </div>
+      <div class="terminal-title">meet_the_developer.exe</div>
+    </div>
+
+    <div class="terminal-body">
+      <div class="profile-layout">
+        
+        <div class="profile-sidebar">
+          <div class="avatar-glow">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150" alt="Developer Avatar" class="avatar">
+          </div>
+          <h2 class="dev-name">Alex Dev</h2>
+          <p class="dev-tag">&gt; Full-Stack Creator</p>
+        </div>
+
+        <div class="profile-code">
+          <div class="typing-container">
+            <span id="typing-text"></span><span class="cursor">|</span>
+          </div>
+          
+          <pre class="code-block"><code><span class="keyword">const</span> developer = {
+  pronouns: <span class="string">"They/Them"</span>,
+  stack: [<span class="string">"JavaScript"</span>, <span class="string">"CSS"</span>, <span class="string">"React"</span>, <span class="string">"Node"</span>],
+  coffee_level: <span class="number">100</span>,
+  current_status: <span class="string">"Building cool apps"</span>
+};
+
+<span class="comment">// Click button to execute connection</span></code></pre>
+          
+          <div class="action-buttons">
+            <button class="btn primary-btn" onclick="runCommand()">ping_me.sh</button>
+            <a href="#" class="btn secondary-btn">view_projects()</a>
+          </div>
+          
+          <div id="terminal-output" class="hidden"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
